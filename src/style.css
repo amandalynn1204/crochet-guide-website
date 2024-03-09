@@ -1,3 +1,37 @@
+:root {
+  --font-heading: "Madimi One", sans-serif;
+  --font-primary: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   text-align: center;
+  color: white;
+  font-size: 120px;
+  font-family: var(--font-heading);
+  letter-spacing: 4px;
+}
+
+.hero {
+  padding: 140px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(/images/hero-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 72px;
+  }
+
+  .hero {
+    padding: 100px 20px;
+  }
 }
