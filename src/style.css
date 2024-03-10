@@ -5,6 +5,7 @@
 
 body {
   font-family: var(--font-primary);
+  background-color: rgb(255, 251, 239);
   padding: 0;
   margin: 0;
 }
@@ -63,15 +64,28 @@ nav ul li a.active {
 }
 
 h1 {
+  font-family: var(--font-heading);
   text-align: center;
   color: white;
   font-size: 120px;
-  font-family: var(--font-heading);
   letter-spacing: 4px;
 }
 
+h2 {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+section {
+  padding: 40px 80px;
+}
+
+section p {
+  color: rgb(80, 80, 80);
+}
+
 .hero {
-  padding: 160px 20px 100px;
+  padding: 160px 20px 120px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(/images/hero-background.jpg);
   background-size: cover;
@@ -79,7 +93,46 @@ h1 {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 900px) {
+.grid-two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.button {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  background-color: orange;
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: all 200ms ease-in-out;
+}
+
+.button:hover {
+  background-color: rgb(255, 191, 72);
+}
+
+.youtube-embed {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mb-5 {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 960px) {
   nav {
     display: block;
   }
@@ -92,11 +145,33 @@ h1 {
     font-size: 72px;
   }
 
+  h2 {
+    font-size: 36px;
+  }
+
   .hero {
     padding: 140px 20px 80px;
   }
 
   .nav-logo {
     display: none;
+  }
+
+  .grid-two-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-text-center {
+    text-align: center;
+  }
+
+  .youtube-embed.mobile-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 40px 20px;
   }
 }
