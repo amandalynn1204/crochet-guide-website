@@ -80,11 +80,23 @@ h1 {
 }
 
 @media (max-width: 900px) {
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
   h1 {
     font-size: 72px;
   }
 
   .hero {
     padding: 140px 20px 100px;
+  }
+
+  .nav-logo {
+    display: none;
   }
 }
