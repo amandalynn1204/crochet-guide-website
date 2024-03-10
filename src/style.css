@@ -40,7 +40,7 @@ nav p {
 nav ul {
   list-style-type: none;
   padding: 0;
-  padding-right: 75px;
+  padding-right: 80px;
   padding-top: 3px;
 }
 
@@ -93,7 +93,7 @@ h1 {
   }
 
   .hero {
-    padding: 140px 20px 100px;
+    padding: 140px 20px 80px;
   }
 
   .nav-logo {
