@@ -28,7 +28,7 @@ nav a {
 nav img {
   width: 40px;
   position: relative;
-  top: 9px;
+  bottom: 5px;
 }
 
 nav p {
@@ -40,9 +40,7 @@ nav p {
 
 nav ul {
   list-style-type: none;
-  padding: 0;
-  padding-right: 80px;
-  padding-top: 3px;
+  padding: 18px 0 0;
 }
 
 nav ul li {
@@ -69,15 +67,17 @@ h1 {
   color: white;
   font-size: 120px;
   letter-spacing: 4px;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 48px;
   margin: 20px 0;
+  font-weight: 700;
 }
 
 section {
-  padding: 40px 80px;
+  padding: 50px 80px;
 }
 
 section p {
@@ -85,18 +85,12 @@ section p {
 }
 
 .hero {
-  padding: 160px 20px 120px;
+  padding: 250px 20px 200px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(/images/hero-background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.grid-two-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
 }
 
 .button {
@@ -106,30 +100,19 @@ section p {
   background-color: orange;
   border-radius: 8px;
   padding: 10px 20px;
+  border: 2px solid rgb(255, 140, 0);
   display: inline-block;
   transition: all 200ms ease-in-out;
 }
 
 .button:hover {
-  background-color: rgb(255, 191, 72);
+  background-color: rgb(255, 140, 0);
 }
 
 .youtube-embed {
   width: 100%;
   aspect-ratio: 16/9;
   border-radius: 12px;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.mt-2 {
-  margin-top: 20px;
-}
-
-.mb-5 {
-  margin-bottom: 50px;
 }
 
 @media (max-width: 960px) {
@@ -154,18 +137,6 @@ section p {
   }
 
   .nav-logo {
-    display: none;
-  }
-
-  .grid-two-columns {
-    grid-template-columns: 1fr;
-  }
-
-  .mobile-text-center {
-    text-align: center;
-  }
-
-  .youtube-embed.mobile-hidden {
     display: none;
   }
 }
