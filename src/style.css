@@ -1,11 +1,15 @@
 :root {
   --font-heading: "Madimi One", sans-serif;
   --font-primary: "Poppins", sans-serif;
+  --background-primary: rgb(255, 251, 239);
+  --background-secondary: rgb(255, 248, 225);
+  --color-primary: orange;
+  --color-secondary: rgb(255, 140, 0);
+  --text-secondary-color: rgb(100, 100, 100);
 }
 
 body {
   font-family: var(--font-primary);
-  background-color: rgb(255, 251, 239);
   padding: 0;
   margin: 0;
 }
@@ -17,7 +21,7 @@ nav {
   position: fixed;
   width: 100%;
   background: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -54,11 +58,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: orange;
+  color: var(--color-primary);
 }
 
 nav ul li a.active {
-  color: orange;
+  color: var(--color-primary);
 }
 
 h1 {
@@ -81,7 +85,7 @@ section {
 }
 
 section p {
-  color: rgb(80, 80, 80);
+  color: var(--text-secondary-color);
 }
 
 .hero {
@@ -97,16 +101,24 @@ section p {
   text-decoration: none;
   font-size: 18px;
   color: white;
-  background-color: orange;
+  background-color: var(--color-primary);
   border-radius: 8px;
   padding: 10px 20px;
-  border: 2px solid rgb(255, 140, 0);
+  border: 2px solid var(--color-secondary);
   display: inline-block;
   transition: all 200ms ease-in-out;
 }
 
 .button:hover {
-  background-color: rgb(255, 140, 0);
+  background-color: var(--color-secondary);
+}
+
+.primary-background {
+  background-color: var(--background-primary);
+}
+
+.secondary-background {
+  background-color: var(--background-secondary);
 }
 
 .youtube-embed {
@@ -133,7 +145,7 @@ section p {
   }
 
   .hero {
-    padding: 140px 20px 80px;
+    padding: 160px 20px 80px;
   }
 
   .nav-logo {
