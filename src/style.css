@@ -6,6 +6,7 @@
   --color-primary: orange;
   --color-secondary: rgb(255, 140, 0);
   --text-secondary-color: rgb(100, 100, 100);
+  --footer-background: rgb(255, 220, 167);
 }
 
 body {
@@ -88,6 +89,35 @@ section p {
   color: var(--text-secondary-color);
 }
 
+footer {
+  padding: 40px 40px 20px;
+  background-color: var(--footer-background);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(/images/footer-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+footer h3 {
+  font-size: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  opacity: 0.5;
+}
+
 .hero {
   padding: 250px 20px 200px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -135,6 +165,10 @@ section p {
 
 .secondary-background {
   background-color: var(--background-secondary);
+}
+
+.row {
+  max-width: 100%;
 }
 
 @media (max-width: 960px) {
