@@ -113,18 +113,28 @@ section p {
   background-color: var(--color-secondary);
 }
 
-.primary-background {
-  background-color: var(--background-primary);
+.email-link {
+  font-size: 24px;
+  color: var(--color-secondary);
+  display: inline-block;
 }
 
-.secondary-background {
-  background-color: var(--background-secondary);
+.email-link:hover {
+  text-decoration: none;
 }
 
 .youtube-embed {
   width: 100%;
   aspect-ratio: 16/9;
   border-radius: 12px;
+}
+
+.primary-background {
+  background-color: var(--background-primary);
+}
+
+.secondary-background {
+  background-color: var(--background-secondary);
 }
 
 @media (max-width: 960px) {
